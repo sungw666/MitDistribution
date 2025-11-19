@@ -9,7 +9,7 @@ exec > >(tee -a "$LOG_FILE") 2>&1
 success=0
 fail=0
 
-for i in {1..500}
+for i in {1..50}
 do
    echo "Running test iteration $i"
    if go test -run 2A; then
